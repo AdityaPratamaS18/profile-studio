@@ -30,8 +30,12 @@ def cmd_doctor(_):
     for mod, pkg in REQUIRED:
         try:
             __import__(mod); print("OK    %s" % pkg)
-        except Exception:
-            ok = False; print("MISS  %s   fix: python3 -m pip install --user %s" % (pkg, pkg))
+        except Exception as e:
+            ok = False
+            spec = pkg
+            if pkg == "reportlab" and sys.version_info < (3, 10):
+                spec = '"reportlab<5.1"'
+            print("MISS  %s (%s)   fix: python3 -m pip install --user %s" % (pkg, str(e).splitlines()[0][:80], spec))
     for tool, why in OPTIONAL:
         found = shutil.which(tool)
         print("%s  %s (%s)%s" % ("OK  " if found else "WARN", tool, why,

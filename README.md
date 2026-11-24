@@ -30,6 +30,9 @@ services overview, why choose us, service pages, team, contact.
    python3 -m pip install --user reportlab pillow svglib python-docx
    ```
 
+   On Python 3.9, use `"reportlab<5.1"` in place of `reportlab`: reportlab 5.1 needs Python 3.10 or later.
+   `python3 -m pip install --user -r requirements.txt` selects the correct version for you.
+
 2. Install poppler for the checks (optional, recommended):
 
    ```bash
