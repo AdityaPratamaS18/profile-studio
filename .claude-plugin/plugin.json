@@ -1,0 +1,19 @@
+{
+  "name": "profile-studio",
+  "version": "0.1.0",
+  "description": "Make a print-ready company profile (A4 PDF) from one JSON file: content plan, Word review copy, image-led dark design with icons, and automatic layout checks.",
+  "author": {
+    "name": "Aditya Pratap Singh"
+  },
+  "license": "MIT",
+  "keywords": [
+    "company-profile",
+    "brochure",
+    "pdf",
+    "reportlab",
+    "design",
+    "agency"
+  ],
+  "homepage": "https://github.com/AdityaPratamaS18/profile-studio",
+  "repository": "https://github.com/AdityaPratamaS18/profile-studio"
+}

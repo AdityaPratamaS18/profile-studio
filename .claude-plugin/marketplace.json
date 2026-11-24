@@ -1,0 +1,12 @@
+{
+  "name": "profile-studio",
+  "description": "Print-ready company profiles, made with Claude Code.",
+  "owner": { "name": "Aditya Pratap Singh" },
+  "plugins": [
+    {
+      "name": "profile-studio",
+      "source": "./",
+      "description": "Plan, review, design and check a company profile PDF from one profile.json."
+    }
+  ]
+}

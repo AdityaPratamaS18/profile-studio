@@ -1,0 +1,56 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {os: macos-latest, python: "3.9"}
+          - {os: macos-latest, python: "3.13"}
+          - {os: ubuntu-latest, python: "3.10"}
+          - {os: ubuntu-latest, python: "3.13"}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install poppler
+        run: |
+          if [ "$RUNNER_OS" = "Linux" ]; then sudo apt-get update -q && sudo apt-get install -y -q poppler-utils; else brew install poppler; fi
+      - name: Install Python packages
+        run: python -m pip install -r requirements.txt
+      - name: Smoke test
+        run: bash tests/smoke_test.sh
+
+  manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: JSON files parse
+        run: for f in .claude-plugin/*.json skills/profile-studio/templates/*/profile.json; do python3 -m json.tool "$f" > /dev/null && echo "ok $f"; done
+      - name: Plugin and marketplace names match
+        run: |
+          python3 - <<'PY'
+          import json
+          p = json.load(open(".claude-plugin/plugin.json"))
+          m = json.load(open(".claude-plugin/marketplace.json"))
+          assert m["plugins"][0]["name"] == p["name"], "marketplace entry name must equal plugin.json name"
+          assert not m["name"].startswith("claude-"), "marketplace name must not start with claude-"
+          print("ok", p["name"], p["version"])
+          PY
+      - name: No em or en dashes in the docs and code
+        run: "! grep -rnP '[\\x{2013}\\x{2014}]' --include='*.md' --include='*.py' --include='*.json' ."

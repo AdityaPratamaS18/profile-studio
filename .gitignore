@@ -1,0 +1,8 @@
+# build output and caches
+build/
+__pycache__/
+*.pyc
+.DS_Store
+# real client work never goes in this repo
+profiles/
+*.local.json

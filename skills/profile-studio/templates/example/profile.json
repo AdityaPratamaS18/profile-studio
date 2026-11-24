@@ -1,0 +1,208 @@
+{
+  "version": "v1",
+  "company": {
+    "name": "Lumen Ridge",
+    "legal_name": "Lumen Ridge Advisory LLC",
+    "website": "www.lumenridge.example",
+    "footer_label": "Company Profile",
+    "tagline_line": "Accounting, advisory and growth services",
+    "phone": "+00 1234 5678",
+    "email": "hello@lumenridge.example"
+  },
+  "brand": {
+    "logo": "logo.png",
+    "colors": {
+      "ground": "#0a1c24",
+      "surface": "#0f2a33",
+      "border": "#2a4d58",
+      "accent": "#43b02a",
+      "accent_light": "#5ed12f",
+      "accent_dark": "#2f8c1d",
+      "secondary": "#29a8e0",
+      "heading": "#f2f7f5",
+      "body": "#b8c7cc",
+      "muted": "#8aa0a7"
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "style": "diagonal",
+      "photo": "people.jpg",
+      "face": [0.5, 0.3],
+      "kicker": "Company",
+      "title": ["Profile", "2026"],
+      "subtitle": "Accounting, advisory and growth services for growing businesses"
+    },
+    {
+      "type": "contents",
+      "photo": "office.jpg"
+    },
+    {
+      "type": "about",
+      "title": ["About", "Lumen Ridge"],
+      "contents_name": "About Us",
+      "photo": "city.jpg",
+      "lead": "Lumen Ridge helps owners run a business with clean books, clear numbers and fewer surprises.",
+      "columns": [
+        "We started in 2016 as a two-person accounting practice. Today a team of 40 serves more than 300 businesses across retail, trade, services and manufacturing.",
+        "Each client has one named partner and a small team that knows the file. We answer in plain words and we tell you what to do next, not only what happened."
+      ],
+      "stats": [["300+", "Businesses served"], ["40", "People on the team"], ["2016", "Year we started"]]
+    },
+    {
+      "type": "leadership",
+      "title": ["Our", "Leadership"],
+      "photo": "team.jpg",
+      "lead": "Two partners lead the firm. Both still work on client files every week.",
+      "people": [
+        {"name": "Alex Moreno", "role": "Managing Partner", "bio": "Alex leads audit and advisory work. Alex has 18 years in practice and in industry finance roles."},
+        {"name": "Sam Okafor", "role": "Partner, Growth", "bio": "Sam leads the growth and digital team. Sam built the marketing function of two regional brands."}
+      ]
+    },
+    {
+      "type": "values",
+      "title": ["Mission, Vision", "and Values"],
+      "contents_name": "Mission and Values",
+      "photo": "desk.jpg",
+      "mission": "To give every owner numbers they trust and advice they can act on.",
+      "vision": "To be the first call for a growing business when a decision is about money.",
+      "values": [
+        {"name": "Integrity", "icon": "shield-check"},
+        {"name": "Clarity", "icon": "lightbulb"},
+        {"name": "Ownership", "icon": "user-check"},
+        {"name": "Speed", "icon": "timer"},
+        {"name": "Partnership", "icon": "handshake"}
+      ]
+    },
+    {
+      "type": "clients",
+      "title": ["What Our", "Clients Say"],
+      "contents_name": "Clients and Testimonials",
+      "photo": "people.jpg",
+      "hero": {
+        "text": "Lumen Ridge took over our books in the middle of a hard year. Within one quarter we knew our real margins and fixed two loss-making lines.",
+        "who": "Founder",
+        "what": "Avora Trading"
+      },
+      "quotes": [
+        {"text": "Month-end used to take three weeks. Now we close in five days and the reports arrive before the board meeting.", "who": "Finance Manager", "what": "Kestrel Logistics"},
+        {"text": "Clear advice, fast replies and no jargon. They feel like part of our own team.", "who": "Managing Director", "what": "Tidewell Foods"}
+      ],
+      "logos_label": "Some of the businesses we work with",
+      "logos": ["avora.png", "kestrel.png", "tidewell.png", "orbis.png", "halden.png", "marlo.png", "quillo.png", "ferro.png"]
+    },
+    {
+      "type": "services",
+      "title": ["Our", "Services"],
+      "photo": "network.jpg",
+      "intro": "Four service lines, one team. Use one service, or let us run the full finance and growth side of the business."
+    },
+    {
+      "type": "why",
+      "title": ["Why Choose", "Lumen Ridge"],
+      "contents_name": "Why Choose Us",
+      "photo": "team.jpg",
+      "intro": "Owners stay with us for years. These are the reasons they give.",
+      "reasons": [
+        {"icon": "user-check", "title": "One named partner", "text": "A partner owns your file and joins every review."},
+        {"icon": "timer", "title": "Fast answers", "text": "A reply within one working day, every time."},
+        {"icon": "chart-line", "title": "Numbers you can use", "text": "Monthly reports in plain words, with the next action."},
+        {"icon": "layers", "title": "One team for all of it", "text": "Books, audit, advisory and growth under one roof."},
+        {"icon": "lock", "title": "Data kept safe", "text": "Secure systems and clear access rules for your files."},
+        {"icon": "badge-check", "title": "Qualified people", "text": "Chartered accountants and certified specialists."}
+      ]
+    },
+    {
+      "type": "service",
+      "title": ["Accounting and", "Bookkeeping"],
+      "contents_name": "Accounting and Bookkeeping",
+      "summary": "Monthly books, payroll, VAT returns and management reports.",
+      "icon": "calculator",
+      "photo": "desk.jpg",
+      "intro": "Accurate books every month, so you always know where the business stands.",
+      "groups": ["What we do", "What you get"],
+      "blocks": [
+        {"name": "Bookkeeping", "text": "We record every transaction and reconcile the bank each month.", "column": 0},
+        {"name": "Payroll", "bullets": ["Monthly salary runs", "Payslips and end-of-service records", "Leave and gratuity balances"], "column": 0},
+        {"name": "Tax returns", "text": "We prepare and file VAT and corporate tax returns on time.", "column": 0},
+        {"name": "Monthly pack", "bullets": ["Profit and loss and balance sheet", "Cash flow and aged receivables", "A one-page summary with actions"], "column": 1},
+        {"name": "A clean audit trail", "text": "Every entry links to its document, so the year-end audit is short.", "column": 1}
+      ],
+      "who": "Owners who want reliable books without an in-house finance team."
+    },
+    {
+      "type": "service",
+      "title": ["Audit and", "Assurance"],
+      "contents_name": "Audit and Assurance",
+      "summary": "Statutory audit, internal audit and agreed-upon procedures.",
+      "icon": "file-search",
+      "photo": "audit.jpg",
+      "intro": "Independent checks that give banks, partners and owners confidence in the numbers.",
+      "steps": ["Plan the audit with you", "Test controls and balances", "Discuss findings", "Issue the report"],
+      "blocks": [
+        {"name": "Statutory audit", "text": "Year-end audit to the standards your regulator requires.", "column": 1},
+        {"name": "Internal audit", "bullets": ["Risk review of key processes", "Control tests and fixes", "Reports to the board"], "column": 1}
+      ],
+      "who": "Companies that need an audit for a regulator, a bank or a sale."
+    },
+    {
+      "type": "service",
+      "title": ["Business", "Advisory"],
+      "contents_name": "Business Advisory",
+      "summary": "Budgets, forecasts, valuations and support for big decisions.",
+      "icon": "compass",
+      "photo": "growth.jpg",
+      "intro": "Help with the decisions that change the business: growth, funding and structure.",
+      "blocks": [
+        {"name": "Budgets and forecasts", "text": "A twelve-month plan that you update with real results.", "column": 0},
+        {"name": "Funding support", "bullets": ["Bank-ready financial models", "Investor packs", "Loan applications"], "column": 0},
+        {"name": "Valuation", "text": "A clear value for a sale, a new partner or a share transfer.", "column": 1},
+        {"name": "Cost review", "text": "We find the costs that do not earn their place.", "column": 1}
+      ],
+      "who": "Owners at a turning point: expansion, a new investor or a sale."
+    },
+    {
+      "type": "service",
+      "title": ["Digital", "Growth"],
+      "contents_name": "Digital Growth",
+      "summary": "Websites, search, social media and paid campaigns.",
+      "icon": "megaphone",
+      "photo": "network.jpg",
+      "intro": "Marketing that is planned and measured like any other investment.",
+      "blocks": [
+        {"name": "Websites", "text": "Fast, clear websites that turn visits into enquiries.", "column": 0},
+        {"name": "Search", "bullets": ["Search engine optimisation", "Local business listings", "Monthly ranking reports"], "column": 0},
+        {"name": "Social media", "text": "A monthly content plan, design and posting.", "column": 1},
+        {"name": "Paid campaigns", "text": "Search and social ads, with cost per lead reported every week.", "column": 1}
+      ],
+      "who": "Businesses that want more enquiries and a clear cost for each one."
+    },
+    {
+      "type": "team",
+      "title": ["Our", "Team"],
+      "photo": "team.jpg",
+      "intro": "A team of 40 accountants, auditors, advisers and marketers.",
+      "groups": [
+        {"name": "Accounting", "members": ["Jordan Lee, Senior Accountant", "Priya Shah, Accountant", "Chris Novak, Payroll Lead"]},
+        {"name": "Audit", "members": ["Dana Cruz, Audit Manager", "Lee Park, Senior Auditor"]},
+        {"name": "Advisory", "members": ["Mira Haddad, Advisory Lead", "Tom Reyes, Analyst"]},
+        {"name": "Digital Growth", "members": ["Nina Patel, Growth Lead", "Omar Diaz, Designer", "Ivy Chen, Ads Specialist"]}
+      ]
+    },
+    {
+      "type": "contact",
+      "title": ["Contact", "Us"],
+      "photo": "city.jpg",
+      "headline": "Talk to a partner this week.",
+      "offices": [
+        {"name": "Head Office", "lines": ["Level 4, Example Tower", "1 Sample Street", "Example City"]},
+        {"name": "Branch Office", "lines": ["Unit 12, Harbour Park", "22 Demo Road", "Example City"]}
+      ],
+      "people": [
+        {"name": "Alex Moreno", "role": "Managing Partner", "phone": "+00 1234 5600", "email": "alex@lumenridge.example"},
+        {"name": "Sam Okafor", "role": "Partner, Growth", "phone": "+00 1234 5611", "email": "sam@lumenridge.example"}
+      ]
+    }
+  ]
+}
